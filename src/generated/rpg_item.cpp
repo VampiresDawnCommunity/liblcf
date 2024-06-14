@@ -92,6 +92,8 @@ std::ostream& operator<<(std::ostream& os, const Item& obj) {
 	os << ", ranged_target="<< obj.ranged_target;
 	os << ", easyrpg_using_message="<< obj.easyrpg_using_message;
 	os << ", easyrpg_max_count="<< obj.easyrpg_max_count;
+	os << ", easyrpg_order="<< obj.easyrpg_order;
+	os << ", easyrpg_category="<< obj.easyrpg_category;
 	os << "}";
 	return os;
 }

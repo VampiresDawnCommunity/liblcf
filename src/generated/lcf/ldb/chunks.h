@@ -625,7 +625,11 @@ namespace LDB_Reader {
 			/** Item usage message in battle */
 			easyrpg_using_message = 0xC9,
 			/** How many the player can carry of this item */
-			easyrpg_max_count = 0xCA
+			easyrpg_max_count = 0xCA,
+			/** Override for the default ordering of items */
+			easyrpg_order = 0xCB,
+			/** Item category */
+			easyrpg_category = 0xCC
 		};
 	};
 	struct ChunkEnemyAction {

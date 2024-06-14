@@ -422,6 +422,20 @@ static TypedField<rpg::Item, int32_t> static_easyrpg_max_count(
 	0,
 	0
 );
+static TypedField<rpg::Item, int32_t> static_easyrpg_order(
+	&rpg::Item::easyrpg_order,
+	LDB_Reader::ChunkItem::easyrpg_order,
+	"easyrpg_order",
+	0,
+	0
+);
+static TypedField<rpg::Item, int32_t> static_easyrpg_category(
+	&rpg::Item::easyrpg_category,
+	LDB_Reader::ChunkItem::easyrpg_category,
+	"easyrpg_category",
+	0,
+	0
+);
 
 
 template <>
@@ -484,6 +498,8 @@ Field<rpg::Item> const* Struct<rpg::Item>::fields[] = {
 	&static_ranged_target,
 	&static_easyrpg_using_message,
 	&static_easyrpg_max_count,
+	&static_easyrpg_order,
+	&static_easyrpg_category,
 	NULL
 };
 
