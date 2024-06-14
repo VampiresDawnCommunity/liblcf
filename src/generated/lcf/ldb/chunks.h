@@ -1479,7 +1479,9 @@ namespace LDB_Reader {
 			/** System default actor AI */
 			easyrpg_default_actorai = 0xDA,
 			/** System default enemy AI */
-			easyrpg_default_enemyai = 0xDB
+			easyrpg_default_enemyai = 0xDB,
+			/**  */
+			vdce_vehicle_followers_hack = 0xFA
 		};
 	};
 	struct ChunkSwitch {

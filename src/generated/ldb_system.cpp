@@ -557,6 +557,13 @@ static TypedField<rpg::System, int32_t> static_easyrpg_default_enemyai(
 	0,
 	0
 );
+static TypedField<rpg::System, bool> static_vdce_vehicle_followers_hack(
+	&rpg::System::vdce_vehicle_followers_hack,
+	LDB_Reader::ChunkSystem::vdce_vehicle_followers_hack,
+	"vdce_vehicle_followers_hack",
+	0,
+	0
+);
 
 
 template <>
@@ -638,6 +645,7 @@ Field<rpg::System> const* Struct<rpg::System>::fields[] = {
 	&static_easyrpg_use_rpg2k_battle_commands,
 	&static_easyrpg_default_actorai,
 	&static_easyrpg_default_enemyai,
+	&static_vdce_vehicle_followers_hack,
 	NULL
 };
 
