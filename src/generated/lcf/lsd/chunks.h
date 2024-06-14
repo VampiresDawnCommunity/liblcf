@@ -996,6 +996,8 @@ namespace LSD_Reader {
 			version = 0x01,
 			/** Codepage used to store text in the savegame data */
 			codepage = 0x02,
+			/** Language set by the player */
+			language = 0x03,
 			/** User generated windows e.g. through ShowStringPicture */
 			windows = 0x64
 		};

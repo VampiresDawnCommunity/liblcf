@@ -12,6 +12,7 @@
 // Headers
 #include "lcf/rpg/saveeasyrpgdata.h"
 
+constexpr const char* lcf::rpg::SaveEasyRpgData::kDefaultLanguage;
 namespace lcf {
 namespace rpg {
 
@@ -19,6 +20,7 @@ std::ostream& operator<<(std::ostream& os, const SaveEasyRpgData& obj) {
 	os << "SaveEasyRpgData{";
 	os << "version="<< obj.version;
 	os << ", codepage="<< obj.codepage;
+	os << ", language="<< obj.language;
 	os << ", windows=";
 	for (size_t i = 0; i < obj.windows.size(); ++i) {
 		os << (i == 0 ? "[" : ", ") << obj.windows[i];

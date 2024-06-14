@@ -34,6 +34,13 @@ static TypedField<rpg::SaveEasyRpgData, int32_t> static_codepage(
 	0,
 	0
 );
+static TypedField<rpg::SaveEasyRpgData, DBString> static_language(
+	&rpg::SaveEasyRpgData::language,
+	LSD_Reader::ChunkSaveEasyRpgData::language,
+	"language",
+	0,
+	0
+);
 static TypedField<rpg::SaveEasyRpgData, std::vector<rpg::SaveEasyRpgWindow>> static_windows(
 	&rpg::SaveEasyRpgData::windows,
 	LSD_Reader::ChunkSaveEasyRpgData::windows,
@@ -47,6 +54,7 @@ template <>
 Field<rpg::SaveEasyRpgData> const* Struct<rpg::SaveEasyRpgData>::fields[] = {
 	&static_version,
 	&static_codepage,
+	&static_language,
 	&static_windows,
 	NULL
 };
